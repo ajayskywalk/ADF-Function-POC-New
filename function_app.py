@@ -22,7 +22,7 @@ def adf_poc(req: func.HttpRequest) -> func.HttpResponse:
     name = req.params.get("name") or body.get("name") or "ADF"
     result = {
         "status": "Succeeded",
-        "message": f"Hello {name}, from Python v2 Azure Function",
+        "message": f"Hello {name}, from Python New v2 Azure Function",
         "received": body,
         "pipelineRunId": body.get("pipelineRunId"),
         "utcNow": datetime.now(timezone.utc).isoformat(),
